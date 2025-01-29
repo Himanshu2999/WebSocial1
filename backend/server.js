@@ -17,12 +17,10 @@ mg.set('strictQuery', false)
 
 app.use("/api", routsapi)
 app.use("/api", fileapi)
-const PORT = process.env.PORT || 9000
-
 app.get('/', (req, res)=>{
     res.send("Welcome to our Website")
 })
 
-app.listen(PORT,(req,res)=>{
+app.listen(9000,(req,res)=>{
     console.log("Server is connected")
 })
