@@ -9,7 +9,7 @@ const fileapi = require('./uploadapis');
 // Middleware
 app.use(exp.urlencoded({ extended: false }));
 app.use(exp.json());
-app.use(cors({ origin: 'https://websocialfron.onrender.com/' })); 
+app.use(cors({origin:'http://localhost:3000'}));
 
 // MongoDB Connection
 mg.connect('mongodb+srv://Himan13:App123@cluster0.ovylhfy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
