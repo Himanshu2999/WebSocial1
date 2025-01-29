@@ -2,7 +2,6 @@ require('dotenv').config();
 
 const mg = require('mongoose');
 const exp = require('express')
-const cors = require('cors')
 const app = exp();
 const routsapi = require('./routes')
 const fileapi = require('./uploadapis')
